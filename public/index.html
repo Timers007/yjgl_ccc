@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+		<title><%= webpackConfig.name %></title>
+		<script>window.BASEURL = '<%= BASE_URL %>'</script>
+		<script type="text/javascript" src="<%= BASE_URL %>config/config.js"></script>
+    <link rel="stylesheet" href="<%= BASE_URL %>lib/Cesium/Widgets/widgets.css"/>
+    <script src="<%= BASE_URL %>lib/Cesium/Cesium.js"></script>
+    <script type="text/javascript" src="<%= BASE_URL %>lib/turf.min.js"></script>
+    <script src="https://api.tianditu.gov.cn/api?v=4.0&tk=10239638a820ef1f402dc46728da7fa5" type="text/javascript"></script>
+  </head>
+  <body>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <noscript>
+      <strong>
+        We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.
+      </strong>
+    </noscript>
+    <div id="app"></div>
+  </body>
+  <style>
+    body,
+    html {
+      height: 960px;
+      padding: 0px;
+      margin: 0px;
+    }
+    #app {
+      height: 100%;
+      padding: 0px;
+      margin: 0px;
+    }
+  </style>
+</html>
