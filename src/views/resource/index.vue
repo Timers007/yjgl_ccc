@@ -6,7 +6,7 @@
           <div class="transfer-box">
             <div class="transfer-box-header">
               <el-checkbox @change="getLeftValue" v-model="leftCheck"
-                ><b>可分配的功能资源</b></el-checkbox
+                ><b>可分配的功能资源789789</b></el-checkbox
               >
               <div style="float: right; margin-right: 10px">
                 <el-button type="success" size="small" @click="add"
